@@ -42,8 +42,6 @@ B =
 \end{pmatrix}
 $$
 
-La suma de matrices del mismo tamaño se realiza **sumando cada elemento correspondiente**:
-
 $$
 A + B =
 \begin{pmatrix}
@@ -61,7 +59,9 @@ A + B =
 $$
 
 ---
-## Ejercicio 1 clasificar matrices
+
+## Ejercicio 1: Clasificar matrices
+
 $$
 A =
 \begin{pmatrix}
@@ -93,13 +93,15 @@ D =
 \end{pmatrix}
 $$
 
-A = Matriz identidad  
-B = Matriz diagonal  
-C = Matriz cuadrada  
-D = Matriz triangular superior
+- **A** = Matriz identidad  
+- **B** = Matriz diagonal  
+- **C** = Matriz cuadrada  
+- **D** = Matriz triangular superior
 
+---
 
-## Ejercicio 2 Operaciones básicas
+## Ejercicio 2: Operaciones básicas
+
 $$
 A =
 \begin{pmatrix}
@@ -114,13 +116,14 @@ B =
 \end{pmatrix}
 $$
 
-a) \( A + B \)          
+### a) \( A + B \)
 
 $$
 A + B = \begin{pmatrix} 2 & -1 \\ 3 & 4 \end{pmatrix} + \begin{pmatrix} 5 & 2 \\ -1 & 3 \end{pmatrix} = \begin{pmatrix} 7 & 1 \\ 2 & 7 \end{pmatrix}
-$$                               
+$$
 
-b) \( 2A - B \)
+### b) \( 2A - B \)
+
 $$
 2A = 2 \times \begin{pmatrix} 2 & -1 \\ 3 & 4 \end{pmatrix} = \begin{pmatrix} 4 & -2 \\ 6 & 8 \end{pmatrix}
 $$
@@ -128,21 +131,31 @@ $$
 $$
 2A - B = \begin{pmatrix} 4 & -2 \\ 6 & 8 \end{pmatrix} - \begin{pmatrix} 5 & 2 \\ -1 & 3 \end{pmatrix} = \begin{pmatrix} -1 & -4 \\ 7 & 5 \end{pmatrix}
 $$
-c) \( AB \)
+
+### c) \( AB \)
+
 $$
 AB = \begin{pmatrix} 2 & -1 \\ 3 & 4 \end{pmatrix} \begin{pmatrix} 5 & 2 \\ -1 & 3 \end{pmatrix} = \begin{pmatrix} 11 & 1 \\ 11 & 18 \end{pmatrix}
 $$
-d) \( BA \)
+
+### d) \( BA \)
+
 $$
 BA = \begin{pmatrix} 5 & 2 \\ -1 & 3 \end{pmatrix} \begin{pmatrix} 2 & -1 \\ 3 & 4 \end{pmatrix} = \begin{pmatrix} 16 & 3 \\ 7 & 13 \end{pmatrix}
 $$
-e) \( A^T \)
+
+### e) \( A^T \)
+
 $$
 A^T = \begin{pmatrix} 2 & 3 \\ -1 & 4 \end{pmatrix}
 $$
 
-## Ejercicio 3
-## Datos
+---
+
+## Ejercicio 3: Multiplicación en cadena
+
+### Datos
+
 $$
 A = \begin{pmatrix} 1 & 2 \\ 3 & 4 \end{pmatrix}, \quad 
 B = \begin{pmatrix} 2 & 0 \\ 1 & 3 \end{pmatrix}, \quad 
@@ -154,37 +167,32 @@ $$
 (AB)C = A(BC)
 $$
 
----
+### a) \( AB \)
 
-## a) $AB$
 $$
 AB = \begin{pmatrix} 1 & 2 \\ 3 & 4 \end{pmatrix} \begin{pmatrix} 2 & 0 \\ 1 & 3 \end{pmatrix} = \begin{pmatrix} 4 & 6 \\ 10 & 12 \end{pmatrix}
 $$
 
----
+### b) \( (AB)C \)
 
-## b) $(AB)C$
 $$
 (AB)C = \begin{pmatrix} 4 & 6 \\ 10 & 12 \end{pmatrix} \begin{pmatrix} 1 & 1 \\ 0 & 2 \end{pmatrix} = \begin{pmatrix} 4 & 16 \\ 10 & 34 \end{pmatrix}
 $$
 
----
+### c) \( BC \)
 
-## c) $BC$
 $$
 BC = \begin{pmatrix} 2 & 0 \\ 1 & 3 \end{pmatrix} \begin{pmatrix} 1 & 1 \\ 0 & 2 \end{pmatrix} = \begin{pmatrix} 2 & 2 \\ 1 & 7 \end{pmatrix}
 $$
 
----
+### d) \( A(BC) \)
 
-## d) $A(BC)$
 $$
 A(BC) = \begin{pmatrix} 1 & 2 \\ 3 & 4 \end{pmatrix} \begin{pmatrix} 2 & 2 \\ 1 & 7 \end{pmatrix} = \begin{pmatrix} 4 & 16 \\ 10 & 34 \end{pmatrix}
 $$
 
----
+### e) Comparación
 
-## e) Comparación
 $$
 (AB)C = \begin{pmatrix} 4 & 16 \\ 10 & 34 \end{pmatrix}, \quad 
 A(BC) = \begin{pmatrix} 4 & 16 \\ 10 & 34 \end{pmatrix}
@@ -195,7 +203,10 @@ $$
 ---
 
 ## Respuesta final
+
 $$
 \boxed{\begin{pmatrix} 4 & 16 \\ 10 & 34 \end{pmatrix}}
 $$
+
 ## Si cumple la igualdad
+
