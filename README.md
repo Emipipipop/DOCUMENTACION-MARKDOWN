@@ -199,4 +199,3 @@ $$
 \boxed{\begin{pmatrix} 4 & 16 \\ 10 & 34 \end{pmatrix}}
 $$
 ## Si cumple la igualdad
-
