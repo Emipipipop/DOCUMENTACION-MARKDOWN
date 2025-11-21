@@ -15,10 +15,107 @@ Objetivo: Documentar el Excel
 Ejemplo de como documentar codigo
 
 ```java
-public class Helloword
-public static void main (String args){
-System.out.println("Hola");
+import java.util.Scanner;
+
+public class prueba2 {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        String contrasena;
+        boolean valido;
+
+        do {
+            System.out.print("Ingresa una contraseña: ");
+            contrasena = sc.nextLine();
+
+            valido = true; // se asume válida hasta comprobar lo contrario
+
+            // ----------------------------
+            // 1. Validar longitud >= 8
+            // ----------------------------
+
+             if (contrasena.length() < 8) {
+                 System.out.println("Error: mínimo 8 caracteres.");
+                 valido = false;
+               }else{valido = true;}
+
+            // ----------------------------
+            // 2. Validar al menos una mayúscula
+            // ----------------------------
+            boolean tieneMayus = false;
+
+            for (int i = 0; i < contrasena.length(); i++){
+                if(Character.isUpperCase(contrasena.charAt(i))){
+                    tieneMayus = true;
+                }
+            }
+            if (tieneMayus) {
+                valido = true;
+            }else{
+                System.out.println("debe contener una mayuscula por lo menos");
+                valido = false;
+            }
+
+
+            // ----------------------------
+            // 3. Validar al menos una minúscula
+            // ----------------------------
+
+            boolean tieneMinus = false;
+           
+
+            for (int i = 0; i < contrasena.length(); i++){
+                if(Character.isLowerCase(contrasena.charAt(i))){
+                    tieneMinus = true;
+                }
+            }
+            if (tieneMinus) {
+                valido = true;
+            }else{
+                System.out.println("debe contener una minuscula por lo menos");
+                valido = false;
+            }
+
+            // ----------------------------
+            // 4. Validar al menos un dígito
+            // ----------------------------
+
+            boolean tieneDigito = false;
+            // COMPLETAR
+
+             for(int i = 0; i < contrasena.length(); i++){
+                if(Character.isDigit(contrasena.charAt(i))){
+                    tieneDigito = true;
+                    break;
+                }
+             }
+             if(tieneDigito){
+                valido = true;
+             } else{
+                System.out.println("no contiene numeros");
+                valido = false;
+            }
+
+            // ----------------------------
+            // 5. Validar que NO existan espacios
+            // ----------------------------
+
+             if (contrasena.contains(" ")) {
+                System.out.println("Error: no debe contener espacios.");
+                 valido = false;
+             }
+
+            // Mensaje final si no es válida
+            if (!valido) {
+                System.out.println("La contraseña no cumple los requisitos. Intenta de nuevo.\n");
+            }
+
+        } while (!valido);
+
+        System.out.println("Contraseña válida.");
+    }
 }
+
 ```
 ```Excel
 =transponer(Kermit !A1:AD30)
