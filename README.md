@@ -8,7 +8,7 @@
 
 ---
 
-Objetivo: Documentar el Excel 
+Objetivo: Documentar y aprende a manupular matrices y sus ditintas operaciones y propiedades mediante excel y maniularlas en formato markdonw
 
 ---
 
